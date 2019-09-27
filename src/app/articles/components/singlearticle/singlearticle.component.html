@@ -1,0 +1,15 @@
+<table>
+        <thead>
+            <th>id</th>
+            <th>title</th>
+            <th>link</th>
+        </thead>
+        <tbody>
+<tr *ngFor="let dat of data" >    
+    <td>{{dat.id}}</td>
+    <td>{{dat.title}}</td>
+    <td>{{dat.link}}</td>
+    <td><button (click)="alerta.emit()">click</button></td>
+</tr>
+</tbody>
+</table>
